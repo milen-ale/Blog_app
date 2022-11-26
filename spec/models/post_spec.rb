@@ -23,6 +23,11 @@ RSpec.describe Post, type: :model do
     expect(@post).to be_valid
   end
 
+  context 'All test implementation for Post Model' do
+    it 'Check for length of post title' do
+      expect(@post.title).to(satisfy { |x| x.length <= 250 })
+    end
+
   it 'commentsCounter greater than or === 0' do
     expect(@post.comments_counter).to be 0
   end
@@ -53,4 +58,5 @@ RSpec.describe Post, type: :model do
     Comment.create(post: @post, author: @user, text: 'Hi Tom!')
     expect(@post.return_recent_comments.length).to eq 4
   end
+end
 end
