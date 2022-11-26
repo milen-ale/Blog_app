@@ -1,14 +1,3 @@
-
-## Blog_APP 
-
-
-
-# Live Demo
-live demo not available
-
-
-
-
 <div align="center">
 
   <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
