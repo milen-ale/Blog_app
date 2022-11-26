@@ -36,7 +36,7 @@
 
 **[Blog_App]** This is a blog application built with Ruby On Rails. On completion the app will enable users to post, to comment and like on posts.
 
-## 🛠 Built With <a name="
+## 🛠 Built With 
 - Ruby on rails
 - Postgresql
 - Install stylelint
