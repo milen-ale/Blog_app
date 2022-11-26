@@ -12,7 +12,7 @@ RSpec.describe Comment, type: :model do
       title: 'Today',
       text: 'This is spec'
     )
-    @Comment = Comment.create(post: @post,
+    @comment = Comment.create(post: @post,
                               author: @user,
                               text: 'this is Tom!')
   end
