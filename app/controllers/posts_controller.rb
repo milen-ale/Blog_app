@@ -4,6 +4,6 @@ class PostsController < ApplicationController
   end
 
   def show
-    @post = post.find(prams[:id])
+    @post = Post.all
   end
 end
