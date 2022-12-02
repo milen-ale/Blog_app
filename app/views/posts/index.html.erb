@@ -10,18 +10,18 @@
       <li class="single_post">
         <div class="post-header">
           <h3>Post
-            <%= link_to "/users/#{@user.id}/posts/#{post.id}" do %>
-              <%= post.title %>
+            <%= link_to "/users/#{@user.id}/posts/#{posts.id}" do %>
+              <%= posts.title %>
             <% end %> 
           </h3>
-          <p><%= post.text %>...</p>
+          <p><%= posts.text %>...</p>
           <div>
-            <span><small>Comments: <%= post.comments_counter %></small></span>
-            <span><small>Likes: <%= post.likes_counter %></small></span>
+            <span><small>Comments: <%= posts.comments_counter %></small></span>
+            <span><small>Likes: <%= posts.likes_counter %></small></span>
           </div>
         </div>
         <ul class="comments-container">
-          <% post.return_recent_comments.each do |comment| %>
+          <% posts.return_recent_comments.each do |comment| %>
             <li>
               <p><%= comment.author.name %>:
                 <span>
