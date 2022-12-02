@@ -1,0 +1,12 @@
+<li class="user">
+  <img src=<%= user.photo %> />
+  <div>
+    <h2>
+    <%= link_to "users/#{user.id}" do %>
+      <%= user.name %>
+    <% end %>
+    </h2>
+    <p class="no_of_posts">Number of posts:
+    <%= user.posts_counter %></p>
+  </div>
+</li>
