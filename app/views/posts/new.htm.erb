@@ -1,0 +1,15 @@
+<section>
+  <h1>Add new post</h1>
+  <%= form_with model: @post, url: create_post_path do |form| %>
+  <div>
+    <%= form.label :text %>
+    <%= form.text_area :text %>
+  </div>
+  <div>
+       <%= form.submit "Add post" %>
+  </div>
+  <div>
+    <%= form.submit "Add post" %>
+  </div>
+  <% end %>
+</section>
