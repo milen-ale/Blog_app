@@ -1,10 +1,12 @@
-<h1>Users#show</h1>
-<div class = "show">
-<ul>
-<%= render = @user %>
-</ul>
 
- <div class = "bio">
+<div class = "show">
+<section  class = "main-container">
+  <ul>
+    <%= render @user %>
+  </ul>
+</section>
+
+ <div class = "bio user-bio">
  <h3>Bio</h3>
  <p><%= @user.bio%></p>
   </div>
