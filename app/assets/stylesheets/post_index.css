@@ -1,0 +1,15 @@
+.posts-show {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  font-size: 2em;
+  padding:0  1em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.posts-show .post-header {
+  border: 1px solid rgba(0, 0, 0, 1);
+  display: flex;
+}

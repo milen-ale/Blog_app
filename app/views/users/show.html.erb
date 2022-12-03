@@ -1,10 +1,11 @@
-<h1>Users#show</h1>
-<div class = "show">
-<ul>
-<%= render = @user %>
-</ul>
+<div class = "Post-containers">
+<section  class = "main-container">
+  <ul>
+    <%= render @user %>
+  </ul>
+</section>
 
- <div class = "bio">
+ <div class = "bio user-bio">
  <h3>Bio</h3>
  <p><%= @user.bio%></p>
   </div>
@@ -13,11 +14,12 @@
     <% @user.return_recent_posts.each_with_index do |post, i| %>
       <%= link_to user_post_path(@user.id, post.id) do %>
         <div class="user-recent-post">
-          <p class="post-title"><strong>Post</strong> : <%= post.title %> <%= i + 1 %></p>
+          <h2 class="post-title"><strong>Post</strong> : <%= post.title %> <%= i + 1 %></h2>
           <p class="post-text"><%= post.text %></p>
-          <h3 class="counters">Comments: <%= post.comments_counter %> <h3>
-           <h3> Likes: <%= post.likes_counter %> <h3 >
-            
+          <div class="comment-info">
+          <span class = "comment-text"><small>Comments: <%= post.comments_counter %></small>,</span>
+          <span class = "comment-text"><small>Likes: <%= post.likes_counter %></small></span>
+          </div>
             </div>
             <% end %>
             <% end %>
