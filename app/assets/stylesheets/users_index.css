@@ -5,10 +5,10 @@
   gap: 1em;
   text-decoration: none;
 }
+
 .main-container ul {
   display: flex;
   flex-direction: column;
-  
 }
 
 .main-container ul li.user {
@@ -161,7 +161,7 @@
 
 .post-info,
 .comment-info {
-  margin:5px;
+  margin: 5px;
   padding: 12px;
 }
 
@@ -176,4 +176,3 @@
   width: 100%;
   padding: 40px 0;
 }
-
