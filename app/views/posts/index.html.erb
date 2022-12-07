@@ -5,11 +5,11 @@
 </section>
 <section class="">
   <ul class="posts_list">
-    <% @user.posts.each_with_index do |posts, i| %>
+    <% @user.posts.includes([:comments]).each_with_index do |posts, i| %>
       <li class="single_post">
         <div class="post-header">
           <h3>Post
-            <%= link_to "/users/#{@user.id}/posts/#{posts.id}" do %>
+<%= link_to "/users/#{@user.id}/posts/#{posts.id}" do %>
               <%= posts.title %>
             <% end %> 
           </h3>
