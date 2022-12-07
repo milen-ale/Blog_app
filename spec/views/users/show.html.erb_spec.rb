@@ -7,10 +7,14 @@ RSpec.describe 'users/[show,.html.erb', type: :view do
                           photo: 'https://picsum.photos/200',
                           bio: 'Nigerian Business Lady',
                           posts_counter: 0)
-      Post.create(author_id: @user.id, title: 'Hello 1', text: 'This is my first post', comments_counter: 0, likes_counter: 0)
-      Post.create(author_id: @user.id, title: 'Hello 2', text: 'This is my second post', comments_counter: 0, likes_counter: 0)
-      Post.create(author_id: @user.id, title: 'Hello 3', text: 'This is my third post', comments_counter: 0, likes_counter: 0)
-      @last_post = Post.create(author_id: @user.id, title: 'Hello 4', text: 'This is my fourth post', comments_counter: 0, likes_counter: 0)
+      Post.create(author_id: @user.id, title: 'Hello 1', text: 'This is my first post', comments_counter: 0,
+                  likes_counter: 0)
+      Post.create(author_id: @user.id, title: 'Hello 2', text: 'This is my second post', comments_counter: 0,
+                  likes_counter: 0)
+      Post.create(author_id: @user.id, title: 'Hello 3', text: 'This is my third post', comments_counter: 0,
+                  likes_counter: 0)
+      @last_post = Post.create(author_id: @user.id, title: 'Hello 4', text: 'This is my fourth post',
+                               comments_counter: 0, likes_counter: 0)
       @id = @user.id
       visit user_path(@id)
     end
