@@ -177,3 +177,28 @@
   width: 100%;
   padding: 40px 0;
 }
+.log-in {
+  height: 100vh;
+  margin: 0 auto;
+  position: relative;
+  background: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
+}
+
+.log-in
+.form-1{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  width: 40%;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3);
+}
+
+.form-1 h1 {
+  text-align: center;
+  margin-top: 0.7rem;
+  margin-bottom: 1.5rem;
+}
