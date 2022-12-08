@@ -28,6 +28,8 @@ Metrics/BlockLength:
   IgnoredMethods: ['describe']
   Max: 30
 
+Style/EndOfLine:
+  EnforcedStyle: crlf
 Style/Documentation:
   Enabled: false
 Style/ClassAndModuleChildren:
