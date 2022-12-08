@@ -1,8 +1,8 @@
- class User < ApplicationRecord
+class User < ApplicationRecord
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :validatable, confirmable
+         :recoverable, :rememberable, :validatable, :confirmable
   has_many :comments, foreign_key: 'author_id'
   has_many :likes, foreign_key: 'author_id'
 
@@ -13,4 +13,4 @@
   def return_recent_posts
     Post.limit(3).order(created_at: :desc)
   end
- end
+end
