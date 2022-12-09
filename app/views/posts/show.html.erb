@@ -7,9 +7,13 @@
     </div>
     <p><%= @post.text %></p>
   </div>
+  <%= render "likes/like" %>
   <ul class="comments-container">
     <% @post.return_recent_comments.each do |comment| %>
       <li><span><%= comment.author.name %>:  </span><%= comment.text %></li>
     <% end %>
   </ul>
+  <%= link_to "/users/#{@user.id}/posts/#{@post.id}/comments/new" do %>
+  <button>Add comment</button>
+<% end %>
 </section>
